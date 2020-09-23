@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font-family: "Roboto";
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 400;
+    color: #ccc;
+}
+
+h2{
+    font-size: 4rem;
+    margin: 6vh 0;
+}
+
+button, button:active {
+    font-family: "Roboto";
+    font-size: 2rem;
+    background-color: #e8e8e8;
+    border: none;
+    border-bottom: 8px solid #ccc;
+    color: #222;
+    padding: 1vh 3vw;
+    border-radius: 5px;
+    
+    &:hover, &:visited, &:active, &:focus {
+        outline: 0;
+    }
+
+    &:hover {
+        margin-top: 4px;
+        border-bottom: 4px solid #ccc;
+        cursor: pointer;
+    }
+}
