@@ -6,6 +6,8 @@ import HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const devMode = process.env.NODE_ENV !== 'production';
 
+console.log("DEV MODE =", devMode);
+
 const clientConfig: webpack.Configuration = {
     name: "client",
     mode: devMode ? "development" : "production",

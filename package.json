@@ -7,17 +7,19 @@
     "start": "npm run serve",
     "dev": "npm run build:dev",
     "serve": "cd src/server && ts-node app.ts",
-    "build:dev": "./node_modules/.bin/webpack --env.NODE_ENV=development",
-    "build:prod": "./node_modules/.bin/webpack --env.NODE_ENV=production"
+    "build:dev": "cross-env NODE_ENV=development webpack",
+    "build:prod": "cross-env NODE_ENV=production webpack"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.8",
+    "@types/mini-css-extract-plugin": "^0.9.1",
     "@types/node": "^14.11.2",
     "@types/webpack": "^4.41.22",
     "animals": "0.0.3",
     "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
     "css-loader": "^4.3.0",
     "express": "^4.17.1",
     "html-webpack-plugin": "^4.5.0",
