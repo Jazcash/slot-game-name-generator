@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "",
+    "start": "npm run serve",
+    "dev": "npm run build:dev",
     "serve": "cd src/server && ts-node app.ts",
     "build:dev": "./node_modules/.bin/webpack --env.NODE_ENV=development",
     "build:prod": "./node_modules/.bin/webpack --env.NODE_ENV=production"
