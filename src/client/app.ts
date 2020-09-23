@@ -1,6 +1,6 @@
 import "styles.scss";
 
-import adjectives from "../data/adjectives.json";
+import adjectives from "../../data/adjectives.json";
 import Animals from "animals";
 import pluralize from "pluralize";
 
